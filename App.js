@@ -1,12 +1,14 @@
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StatusBar, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import WidgetScreen from './src/screens/WidgetScreen';
 
 const App = () => {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <View style={{flex: 1}}>
+      <SafeAreaView />
+      <StatusBar backgroundColor={'white'} barStyle={'dark-content'} />
       <WidgetScreen />
-    </SafeAreaView>
+    </View>
   );
 };
 

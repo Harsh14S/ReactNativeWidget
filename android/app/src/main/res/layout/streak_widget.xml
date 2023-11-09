@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.ReactNativeWidget.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_19sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:src="@drawable/tesla_img"/>
+
+        <ImageView
+            android:id="@+id/graphImage"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_40sdp"
+            app:tint="@color/text_green" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_widget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TSLA"
+        android:drawableEnd="@drawable/iv_thunder"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:text="165.65"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/_19sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 0.70%"
+        android:background="@drawable/text_bg"
+        android:textColor="@color/text_green"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"/>
+
+
+</LinearLayout>
